@@ -1,0 +1,68 @@
+#Welcome user to the Binary Quiz
+print("Welcome to the Binary Quiz!")
+
+#Score variable
+score = 0
+
+#Set loop
+while score >= 0:
+
+   #Ask user if they're ready to answer 
+  first_confirm = input("Do you know the answer to the first question? " )
+
+  #Options for answers to first question
+  if first_confirm == "yes":
+    first_question = input("What tattooed animal does Mr Myer have on his right arm? " )
+    if first_question == "dog":
+      print("Correct! Look at the next clues for the next question.")
+      score += 1
+    else:
+      print("Incorrect.")
+  else:
+    print("Check your ASCII table for help to decode the binary.")
+    print("Once you have your letters arrange them into the correct answer.")
+    break
+    
+  second_confirm = input("Do you know the answer to the second question? " )
+
+  #Options for answers to second question
+  if second_confirm == "yes":
+    second_question = input("Okay, what is the colour of a Chow Chow's tongue? " )
+    if second_question == "blue":
+      print("Correct! Look at the next clues for the next question.")
+      score += 1
+    else:
+      print("Incorrect.")
+  else:
+    print("Check your ASCII table for help to decode the binary.")
+    print("Once you have your letters arrange them into the correct answer.")
+    break
+  
+  third_confirm = input("Do you know the answer to the third question? " )
+  
+  if third_confirm == "yes":
+    third_question = input("Okay, what is the colour of a polar bear's skin? " )
+    if third_question == "black":
+      print("Correct! Look at the next clues for the next question")
+      score += 1
+    else:
+      print("Incorrect.")
+  else:
+    print("Check your ASCII table for help to decode the binary.")
+    print("Once you have your letters arrange them into the correct answer.")
+    break
+  
+  print("Congratulations! That completes the Binary Quiz.")
+  print("You have a score of ", score, "/3")
+  if score == 3:
+    print("Wow, you got all of them right. Awesome work!")
+    break
+  elif score == 2:
+    print("You got most of them right. Nice work!")
+    break
+  elif score == 1:
+    print("You have room to improve. Good effort!")
+    break
+  else:
+    print("Hard luck. Practice your binary more and try again later.")
+    break
